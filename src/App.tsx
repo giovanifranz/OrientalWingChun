@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box } from '@chakra-ui/react';
+import Lanternas from './components/Lanternas';
+import Escola from './components/Escola';
+import Porque from './components/Porque';
+import Duvidas from './components/Duvidas';
+import Comece from './components/Comece';
+import Footer from './components/Footer';
+import HeaderSM from './components/HeaderSM';
+import Header from './components/Header'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Box
+        display={["none", "none", "block"]}
+      >
+        <Box mt={-6}>
+          <Header />
+        </Box>
+      </Box>
+      <Box
+        display={["block", "block", "none"]}
+      >
+        <Box mt={-8}>
+          <HeaderSM />
+        </Box>
+
+      </Box>
+      <Lanternas />
+      <Escola />
+      <Porque />
+      <Duvidas />
+      <Comece />
+      <Footer />
+    </>
   );
 }
 

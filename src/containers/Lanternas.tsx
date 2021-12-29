@@ -7,6 +7,7 @@ export default function Lanternas() {
             bgSize="cover"
             w="100%"
             h="993px"
+            pt={["65px", "65px", "380px"]}
         >
             <Box
                 w={["480px", "480px", "1180px","1280px"]}
@@ -14,7 +15,6 @@ export default function Lanternas() {
                 bgColor="rgba(0, 0, 0, 0.6)"
                 mx="auto"
                 border="3px solid white"
-                mt={["65px", "65px", "380px"]}
                 textAlign="center"
             >
                 <Heading

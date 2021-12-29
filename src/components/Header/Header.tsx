@@ -1,10 +1,11 @@
-import { Box, Flex, Heading, Image } from "@chakra-ui/react"
+import { Box, Flex, HStack, Heading, Image } from "@chakra-ui/react"
+import { RiWhatsappFill, RiFacebookCircleFill, RiInstagramFill } from 'react-icons/ri'
 
-export default function Header() {
+export function Header() {
     return (
         <Box
             bgColor="white"
-            w={["full","full","1920px","full"]}
+            w={["full", "full", "1920px", "full"]}
             h="200px"
             px={8}
         >
@@ -12,8 +13,7 @@ export default function Header() {
                 w="1200px"
                 h="200px"
                 mx="auto"
-                
-                >
+            >
                 <Heading
                     as="h1"
                     fontFamily="Zector"
@@ -31,7 +31,7 @@ export default function Header() {
                     zIndex={5000}
                     mx="auto"
                     src="./assets/Logo_OWC.png"
-                    alt="Oriental Logo"
+                    alt="Oriental Wing Chun"
                 />
                 <Box>
                     <Heading
@@ -46,26 +46,11 @@ export default function Header() {
                         Wing Chun
                     </Heading>
                     <Flex>
-                        <Image
-                            src="./assets/INSTA_ICON.png"
-                            alt="Logo"
-                            w="25px"
-                            h="25px"
-                            mr="10px"
-                        />
-                        <Image
-                            src="./assets/FACE_ICON.png"
-                            alt="Logo"
-                            w="25px"
-                            h="25px"
-                            mr="10px"
-                        />
-                        <Image
-                            src="./assets/WHATS_ICON-1.png"
-                            alt="Logo"
-                            w="25px"
-                            h="25px"
-                        />
+                        <HStack spacing='5px'>
+                            <RiInstagramFill size={30} />
+                            <RiFacebookCircleFill size={30} />
+                            <RiWhatsappFill size={30} />
+                        </HStack>
                     </Flex>
                 </Box>
             </Flex>

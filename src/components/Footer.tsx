@@ -1,20 +1,21 @@
-import { Box, Heading, Flex, Image, Text } from "@chakra-ui/react"
+import { Box, Heading, HStack, Flex, Image, Text } from "@chakra-ui/react"
+import { RiWhatsappFill, RiFacebookCircleFill, RiInstagramFill } from 'react-icons/ri'
+
 export default function Footer() {
     return (
         <Box
-        w={["full","full","1920px","full"]}
+            w={["full", "full", "1920px", "full"]}
             h="100%"
             bgColor="white"
-            mb={24}        
         >
             <Flex
-                 w={["480px", "480px", "1180px","1280px"]}
+                w={["480px", "480px", "1180px", "1280px"]}
+                justifyContent='space-between'
+                align='center'
+                mt='15px'
                 mx="auto"
             >
-                <Flex
-                    w="430px"
-                    my="23px"
-                >
+                <Flex>
                     <Image
                         src="./assets/Emblema.png"
                         h="154px"
@@ -31,43 +32,17 @@ export default function Footer() {
                         fontSize="50px"
                         lineHeight="57px"
                         mt="19px"
-                        display={["none","none","block"]}
+                        display={["none", "none", "block"]}
                     >
                         Oriental Wing Shun
                     </Heading>
                 </Flex>
-                <Box
-                    my={["23px","23px","67.5px"]}
-                    w="250px"
-                    mx="auto"
-                    display={["block","block", "flex"]}
-                >
-                    <Image
-                        src="./assets/INSTA_ICON.png"
-                        h={["50px","50px","65px"]}
-                        w={["50px","50px","65px"]}
-                        mr="25px"
-                        mb="5px"
-                    />
-                    <Image
-                        src="./assets/FACE_ICON.png"
-                        h={["50px","50px","65px"]}
-                        w={["50px","50px","65px"]}
-                        mr="25px"
-                        mb="5px"
-                    />
-                    <Image
-                        src="./assets/WHATS_ICON-1.png"
-                        h={["50px","50px","65px"]}
-                        w={["50px","50px","65px"]}
-                    />
-                </Box>
-                <Box
-                    mt="60px"
-                    ml={["-25px","-25px",0]}
-                    w="333px"
-                    h="100%"
-                >
+                <HStack spacing='5px'>
+                    <RiInstagramFill size={65} />
+                    <RiFacebookCircleFill size={65} />
+                    <RiWhatsappFill size={65} />
+                </HStack>
+                <Box>
                     <Text
                         fontFamily="Zector"
                         fontWeight="normal"
@@ -81,9 +56,10 @@ export default function Footer() {
                         Desenvolvido por
                     </Text>
                     <Image
-                        src="./assets/logo.png" 
+                        src="./assets/logo.png"
                         w="333px"
                         h="51px"
+                        alt="Desenvolvido por Highlander Tech"
                     />
                 </Box>
             </Flex>

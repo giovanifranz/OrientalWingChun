@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image } from "@chakra-ui/react"
 
-export default function HeaderSM() {
+export function HeaderSM() {
     return (
         <Box
             bgColor="white"
@@ -19,7 +19,7 @@ export default function HeaderSM() {
                     zIndex={5000}
                     src="./assets/Logo_OWC.png"
                     mr="50px"
-                    alt="Logo"
+                    alt="Oriental Wing Chun"
                 />
                 <Heading
                     as="h1"

@@ -1,38 +1,19 @@
-import { Box } from '@chakra-ui/react';
-import Lanternas from './components/Lanternas';
-import Escola from './components/Escola';
-import Porque from './components/Porque';
-import Duvidas from './components/Duvidas';
-import Comece from './components/Comece';
-import Footer from './components/Footer';
-import HeaderSM from './components/HeaderSM';
-import Header from './components/Header'
+import Lanternas from './containers/Lanternas';
+import Escola from './containers/Escola';
+import Porque from './containers/Porque';
+import Duvidas from './containers/Duvidas';
+import Comece from './containers/Comece';
+import Layout from './containers/Layout';
 
 function App() {
   return (
-    <>
-      <Box
-        display={["none", "none", "block"]}
-      >
-        <Box mt={-6}>
-          <Header />
-        </Box>
-      </Box>
-      <Box
-        display={["block", "block", "none"]}
-      >
-        <Box mt={-8}>
-          <HeaderSM />
-        </Box>
-
-      </Box>
+    <Layout>
       <Lanternas />
       <Escola />
       <Porque />
       <Duvidas />
       <Comece />
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Text, UnorderedList, ListItem } from "@chakra-ui/react"
 
-export default function Porque() {
+export function Porque() {
     return (
         <Box
             h="100%"
@@ -9,7 +9,6 @@ export default function Porque() {
             mt="50px"
             justifyContent="space-between"
             display={["block", "block", "flex"]}
-
         >
             <Box
                 display={["block", "block", "flex"]}

@@ -1,9 +1,4 @@
-import Lanternas from './containers/Lanternas';
-import Escola from './containers/Escola';
-import Porque from './containers/Porque';
-import Duvidas from './containers/Duvidas';
-import Comece from './containers/Comece';
-import Layout from './containers/Layout';
+import { Layout, Lanternas, Escola, Porque, Duvidas, Comece } from './containers';
 
 function App() {
   return (

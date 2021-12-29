@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 interface LayoutProps {
     children: ReactNode
 }
-export default function Layout({ children }: LayoutProps) {
+export function Layout({ children }: LayoutProps) {
     return (<>
         <Box
             display={["none", "none", "block"]}

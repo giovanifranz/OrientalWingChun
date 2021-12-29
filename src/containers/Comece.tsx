@@ -1,7 +1,7 @@
 import { Box, Text, Heading, Flex, Image } from "@chakra-ui/react"
 import Cidade from '../components/Cidades'
 
-export default function Comece() {
+export function Comece() {
     return (
         <Box>
             <Image
@@ -13,7 +13,7 @@ export default function Comece() {
                 zIndex={5000}
             />
             <Box
-                bgImage="./assets/FUNDO_ESCOLAS.png"
+                bgImage="./assets/escolas.png"
                 bgSize="cover"
                 h="800px"
                 w="100%"

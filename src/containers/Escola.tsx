@@ -1,6 +1,6 @@
-import { Box, Text, Heading, Flex, Image } from "@chakra-ui/react"
+import { Box, Text, Heading, Image } from "@chakra-ui/react"
 
-export default function Escola() {
+export function Escola() {
     return (
         <Box
             h="100%"
@@ -63,6 +63,7 @@ export default function Escola() {
                 src="./assets/treino.png"
                 w="564px"
                 h="812px"
+                alt="Treino"
             />
         </Box>
     )

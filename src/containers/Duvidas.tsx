@@ -1,7 +1,7 @@
 import { Box, Heading, Flex, Image, Text, Button } from "@chakra-ui/react"
 import { useState } from 'react';
 
-export default function Duvidas() {
+export function Duvidas() {
     const [card, setCard] = useState(<></>);
     const overlayRespostas_1 = (
         <Box

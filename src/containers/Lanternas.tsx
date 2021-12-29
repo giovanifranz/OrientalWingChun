@@ -1,6 +1,6 @@
 import { Box, Text, Heading } from "@chakra-ui/react"
 
-export default function Lanternas() {
+export function Lanternas() {
     return (
         <Box
             bgImage="./assets/Lanternas.png"

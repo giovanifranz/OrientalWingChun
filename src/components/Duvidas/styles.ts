@@ -60,7 +60,7 @@ export const Button = styled.button`
   }
 
   @media (max-width: 768px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 `
 
@@ -68,7 +68,11 @@ export const Box = styled.div`
   padding: 30px;
   background-color: var(--white);
   border: 2px solid var(--black);
-  max-width: 580px;
+  max-width: 660px;
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
 `
 
 export const CardTitle = styled.h4`
@@ -87,6 +91,7 @@ export const Contato = styled.a`
   width: 320px;
   padding: 0 10px;
   text-decoration: none;
+
   &:hover {
     cursor: pointer;
     opacity: 0.6;
@@ -101,7 +106,7 @@ export const Contato = styled.a`
   }
 
   @media (max-width: 768px) {
-    font-size: 22px;
+    font-size: 20px;
     width: 240px;
   }
 `

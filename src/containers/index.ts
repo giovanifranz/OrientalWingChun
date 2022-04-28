@@ -1,6 +1,0 @@
-export * from './Comece'
-export * from './Duvidas'
-export * from './Escola'
-export * from './Lanternas'
-export * from './Layout'
-export * from './Porque'

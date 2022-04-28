@@ -1,6 +1,6 @@
 import { RiFacebookBoxFill, RiInstagramFill, RiWhatsappFill } from 'react-icons/ri'
 
-import LogoOWC from '../../../assets/logo-owc.png'
+import LogoOWC from '@/assets/logo-owc.png'
 
 import { Collumn, Container, Content, HStack, Image, Title } from './styles'
 

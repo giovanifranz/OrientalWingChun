@@ -1,7 +1,6 @@
+import Instrutor from '@/assets/instrutor.png'
+import Simbolo from '@/assets/simbolo.png'
 import { useWindowsSize } from '@/hooks/useWindowsSize'
-
-import Instrutor from '../../../assets/instrutor.png'
-import Simbolo from '../../../assets/simbolo.png'
 
 import { Box, Container, Content, Flex, ImgBrasão, ImgTreino, List, Text, Title } from './styles'
 

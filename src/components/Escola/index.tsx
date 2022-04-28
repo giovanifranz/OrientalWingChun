@@ -1,4 +1,4 @@
-import Mudjong from '../../../assets/mudjong.png'
+import Mudjong from '@/assets/mudjong.png'
 
 import { Assinatura, Box, Container, Content, Image, Text, Title } from './styles'
 

@@ -5,7 +5,7 @@ export const Container = styled.section`
 `
 
 export const Content = styled.article`
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 50px;
   display: flex;
@@ -13,7 +13,6 @@ export const Content = styled.article`
 
   @media (max-width: 1200px) {
     display: block;
-    width: 100%;
   }
 `
 

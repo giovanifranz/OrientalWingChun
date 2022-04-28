@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -6,6 +6,8 @@ export const GlobalStyle = createGlobalStyle`
   --white: #F9FEFF;
   --black: #000;
   --gray: #E0E0E0;
+  --purple: #753BBD;
+  --green: #25D366;
 }
 
 * {
@@ -38,13 +40,14 @@ body {
     font-size: 14px;
   }
 }
-`
 
-export const Container = styled.section`
+#root {
   max-width: 1920px;
   margin: 0 auto;
 
   @media (max-width: 768px) {
     max-width: 768px;
   }
+}
+
 `

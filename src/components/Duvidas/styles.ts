@@ -10,7 +10,7 @@ export const Content = styled.article`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     display: block;
   }
 `
@@ -25,11 +25,20 @@ export const Title = styled.h2`
     background-color: transparent;
     text-decoration: underline;
   }
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 `
 
 export const Text = styled.p`
+  margin-top: 50px;
   font-size: 30px;
   line-height: 47px;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
 `
 
 export const Button = styled.button`
@@ -49,6 +58,10 @@ export const Button = styled.button`
     cursor: pointer;
     opacity: 0.6;
   }
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
 `
 
 export const Box = styled.div`
@@ -61,4 +74,34 @@ export const Box = styled.div`
 export const CardTitle = styled.h4`
   font-size: 30px;
   text-transform: uppercase;
+`
+
+export const Contato = styled.a`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  line-height: 47px;
+  color: var(--white);
+  background-color: var(--purple);
+  width: 320px;
+  padding: 0 10px;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  svg {
+    color: var(--green);
+  }
+
+  @media (max-width: 1200px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+    width: 240px;
+  }
 `

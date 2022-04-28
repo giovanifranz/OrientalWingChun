@@ -68,3 +68,14 @@ export const HStack = styled.div`
   justify-content: space-between;
   align-items: center;
 `
+
+//para ter redes sociais clicaveis no header
+export const Anchor = styled.a`
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+`

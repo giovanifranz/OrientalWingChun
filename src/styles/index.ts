@@ -3,9 +3,10 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 
 :root {
-  --white: #F9FEFF;
+  --white: #FFFFFF;
   --black: #000;
   --gray: #E0E0E0;
+  --gray-light: #F9FEFF;
   --purple: #753BBD;
   --green: #25D366;
 }
@@ -28,7 +29,7 @@ html {
 }
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: var(--gray);
+  background-color: var(--white);
   color: var(--black);
   margin: 0;
   font-family: 'Saira', sans-serif;

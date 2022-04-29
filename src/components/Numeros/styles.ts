@@ -46,7 +46,7 @@ export const Box = styled.div`
   min-height: 175px;
   border-left: ${({ theme }) => theme.border && '1px solid rgba(0, 0, 0, 0.2)'};
   border-right: ${({ theme }) => theme.border && '1px solid rgba(0, 0, 0, 0.2)'};
-  background-color: var(--white);
+  background-color: var(--gray-light);
 
   @media (max-width: 768px) {
     width: 100vw;

@@ -109,5 +109,6 @@ export const Contato = styled.a`
   @media (max-width: 768px) {
     font-size: 20px;
     width: 240px;
+    width: 215px;
   }
 `

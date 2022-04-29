@@ -122,7 +122,7 @@ export const Contato = styled.a`
   @media (max-width: 768px) {
     font-size: 20px;
     line-height: 30px;
-    width: 240px;
+    width: 215px;
   }
 `
 

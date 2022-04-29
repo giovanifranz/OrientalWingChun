@@ -78,5 +78,6 @@ export const List = styled.ul`
   @media (max-width: 768px) {
     font-size: 16px;
     line-height: 24px;
+    margin-left: 20px;
   }
 `

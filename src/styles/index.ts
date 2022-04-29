@@ -28,7 +28,7 @@ html {
 }
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: var(--white);
+  background-color: var(--gray);
   color: var(--black);
   margin: 0;
   font-family: 'Saira', sans-serif;

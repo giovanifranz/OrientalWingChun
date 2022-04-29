@@ -1,7 +1,7 @@
 import { lazy } from 'react'
 
-import { Banner, Duvidas, Escola, Numeros, Porque } from '@/components'
-import { CardProvider, useWindowsSize } from '@/hooks'
+import { Banner, Comece, Duvidas, Escola, Numeros, Porque } from '@/components'
+import { CardProvider, SelectProvider, useWindowsSize } from '@/hooks'
 
 const Header = lazy(() => import('@/components/Header/Header'))
 const HeaderSM = lazy(() => import('@/components/Header/HeaderSM'))
@@ -18,6 +18,9 @@ function App() {
       <Porque />
       <Duvidas />
       <Numeros />
+      <SelectProvider>
+        <Comece />
+      </SelectProvider>
     </CardProvider>
   )
 }

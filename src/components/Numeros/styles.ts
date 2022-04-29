@@ -2,12 +2,12 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
   width: 100vw;
+  z-index: 99999;
 `
 
 export const Content = styled.div`
   width: 80%;
   margin: 0 auto;
-  background-color: var(--white);
   display: flex;
   justify-content: center;
 
@@ -46,6 +46,7 @@ export const Box = styled.div`
   min-height: 175px;
   border-left: ${({ theme }) => theme.border && '1px solid rgba(0, 0, 0, 0.2)'};
   border-right: ${({ theme }) => theme.border && '1px solid rgba(0, 0, 0, 0.2)'};
+  background-color: var(--white);
 
   @media (max-width: 768px) {
     width: 100vw;

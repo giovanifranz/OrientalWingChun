@@ -89,7 +89,7 @@ export const Contato = styled.a`
   line-height: 47px;
   color: var(--white);
   background-color: var(--purple);
-  width: 320px;
+  width: 290px;
   padding: 0 10px;
   text-decoration: none;
 

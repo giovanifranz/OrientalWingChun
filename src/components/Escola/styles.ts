@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import assinatura from '@/assets/assinatura.png'
+
 export const Container = styled.section`
   width: 100vw;
 `
@@ -66,7 +68,7 @@ export const Assinatura = styled.p`
   margin-top: 94px;
   font-size: 60px;
   line-height: 94px;
-  background-image: url('/assets/assinatura.png');
+  background-image: url(${assinatura});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import grafite from '@/assets/grafite.png'
+
 export const Container = styled.section`
   width: 100vw;
 `
@@ -31,7 +33,7 @@ export const Flex = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url('/assets/grafite.png');
+  background-image: url(${grafite});
   background-size: cover;
   background-repeat: no-repeat;
   height: 260px;

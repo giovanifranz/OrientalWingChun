@@ -1,4 +1,4 @@
-import LogoOWC from '../../../assets/logo-owc.png'
+import LogoOWC from '@/assets/logo-owc.png'
 
 import { Container, Content, Image, Title } from './styles'
 

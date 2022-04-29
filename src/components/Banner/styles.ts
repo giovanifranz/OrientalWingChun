@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
+import lanternas from '@/assets/lanternas.png'
+
 export const Container = styled.section`
-  background-image: url('/assets/lanternas.png');
+  background-image: url(${lanternas});
   background-size: cover;
   width: 100vw;
   height: 990px;

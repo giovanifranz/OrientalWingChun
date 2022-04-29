@@ -22,7 +22,7 @@ function Footer() {
               <RiFacebookBoxFill size={60} />
               <RiWhatsappFill size={60} />
             </SocialMedia>
-            <Anchor>
+            <Anchor href="https://www.highlandertech.com.br/" target="_blank">
               <p>Desenvolvido por</p>
               <HighlanderTechLogo src={highlanderTech} alt="Highlander Tech" />
             </Anchor>

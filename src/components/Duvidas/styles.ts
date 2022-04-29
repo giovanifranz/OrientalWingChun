@@ -37,7 +37,8 @@ export const Text = styled.p`
   line-height: 47px;
 
   @media (max-width: 768px) {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 30px;
   }
 `
 

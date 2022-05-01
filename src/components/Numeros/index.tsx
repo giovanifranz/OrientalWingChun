@@ -6,8 +6,8 @@ function Numeros() {
     <Container>
       <Content>
         <Bloco valor="17" text="anos de experiência" />
-        <Bloco valor="+100" text="técnicas para aprender" border={true} />
-        <Bloco valor="R$80" text="custo fixo mental" opacity={true} />
+        <Bloco valor="+100" text="técnicas para aprender" border />
+        <Bloco valor="R$80" text="custo fixo mental" opacity />
       </Content>
     </Container>
   )

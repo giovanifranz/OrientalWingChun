@@ -1,4 +1,4 @@
-import { Dispatch, ReactNode, SetStateAction } from 'react'
+import { Dispatch, ReactNode, SetStateAction, useMemo } from 'react'
 import { createContext, useContext, useState } from 'react'
 
 import { IDuvida } from '@/components/Duvidas/models'
@@ -17,7 +17,8 @@ const CardContext = createContext({} as Props)
 function CardProvider({ children }: useCardProviderProps) {
   const [card, setCard] = useState({} as IDuvida)
 
-  return <CardContext.Provider value={{ card, setCard }}>{children}</CardContext.Provider>
+  const value = useMemo(() => ({ card, setCard }), [card, setCard])
+  return <CardContext.Provider value={value}>{children}</CardContext.Provider>
 }
 
 const useCard = () => useContext(CardContext)

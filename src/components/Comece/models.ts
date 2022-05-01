@@ -50,4 +50,4 @@ const model = {
 }
 
 export { model }
-export type { InstrutorProps, EnderecoProps }
+export type { EnderecoProps, InstrutorProps }

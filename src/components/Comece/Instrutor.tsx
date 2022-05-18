@@ -1,18 +1,18 @@
 import { RiWhatsappFill } from 'react-icons/ri'
 
 import { InstrutorProps } from './models'
-import { Contato, TextProfile, Title } from './styles'
+import { Contato, InstrutorBox, TextProfile, Title } from './styles'
 
 function Instrutor({ name, telefone, href }: InstrutorProps) {
   return (
-    <div>
+    <InstrutorBox>
       <TextProfile>Instrutor</TextProfile>
       <Title>{name}</Title>
       <Contato href={href} target="_blank">
         <RiWhatsappFill size={40} />
         {telefone}
       </Contato>
-    </div>
+    </InstrutorBox>
   )
 }
 

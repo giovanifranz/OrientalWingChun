@@ -26,12 +26,16 @@ export const Flex = styled.div`
   align-items: center;
   color: white;
   margin-top: 30px;
-  width: 75%;
+  width: 100%;
 
   @media (max-width: 1200px) {
     width: 100%;
     display: block;
   }
+`
+
+export const InstrutorBox = styled.div`
+  margin: 15px;
 `
 
 export const Box = styled.div`
@@ -140,6 +144,7 @@ export const Local = styled.h4`
 
 export const TextLocal = styled.p`
   font-size: 30px;
+  width: 535px;
   color: var(--white);
 
   @media (max-width: 768px) {

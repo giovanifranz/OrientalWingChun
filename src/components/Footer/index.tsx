@@ -12,7 +12,7 @@ function Footer() {
     <Container>
       <Content>
         <Emblema href="/">
-          <Logo src={emblema} alt="Emblema da Escola Oriental Wing Chun" />
+          <Logo src={emblema} alt="Emblema da Escola Oriental Wing Chun" loading="lazy" />
           <h1>Oriental Wing Chun</h1>
         </Emblema>
         {isDesktop && (
@@ -24,7 +24,7 @@ function Footer() {
             </SocialMedia>
             <Anchor href="https://www.highlandertech.com.br/" target="_blank">
               <p>Desenvolvido por</p>
-              <HighlanderTechLogo src={highlanderTech} alt="Highlander Tech" />
+              <HighlanderTechLogo src={highlanderTech} alt="Highlander Tech" loading="lazy" />
             </Anchor>
           </>
         )}

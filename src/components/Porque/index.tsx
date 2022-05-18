@@ -9,9 +9,9 @@ function Porque() {
   return (
     <Container>
       <Content>
-        {isDesktop && <ImgTreino src={Instrutor} alt="Instrutor" />}
+        {isDesktop && <ImgTreino src={Instrutor} alt="Instrutor" loading="lazy" />}
         <Flex>
-          {width > 768 && <ImgBrasão src={Simbolo} alt="Simbolo" />}
+          {width > 768 && <ImgBrasão src={Simbolo} alt="Simbolo" loading="lazy" />}
           <Box>
             <Title>Por que o Wing Chun?</Title>
             <Text>

@@ -23,7 +23,7 @@ const model = {
       endereco: 'Santa Bárbara, Cachoeirinha/RS',
     } as EnderecoProps,
   },
-  gravata: {
+  gravataí: {
     instrutor: {
       name: 'Fábia Dias',
       href: 'https://api.whatsapp.com/send?phone=555199188952',

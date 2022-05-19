@@ -1,6 +1,6 @@
 import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useMemo, useState } from 'react'
 
-type TypeCity = 'gravata' | 'cachoeirinha' | 'canoas'
+type TypeCity = 'gravataí' | 'cachoeirinha' | 'canoas'
 
 interface Props {
   select: TypeCity
@@ -14,7 +14,7 @@ type useSelectProviderProps = {
 const SelectContext = createContext({} as Props)
 
 function SelectProvider({ children }: useSelectProviderProps) {
-  const [select, setSelect] = useState<TypeCity>('gravata')
+  const [select, setSelect] = useState<TypeCity>('gravataí')
 
   const value = useMemo(() => ({ select, setSelect }), [select, setSelect])
   return <SelectContext.Provider value={value}>{children}</SelectContext.Provider>

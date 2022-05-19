@@ -9,7 +9,7 @@ interface Props {
 }
 
 function Button({ title }: Props) {
-  const text = title.replace(/[^0-9a-zA-Z]+/g, '').toLowerCase()
+  const text = title.toLowerCase()
   const { setSelect } = useSelect()
 
   return (

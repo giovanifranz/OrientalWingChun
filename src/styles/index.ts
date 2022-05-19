@@ -15,21 +15,27 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+
+  width: 100%;
+  height: 100%;
+
+
   @media (min-width: 1080px) {
     font-size: 93.75%;
   }
   @media (min-width: 768px) {
     font-size: 87.5%;
+
   }
-  width: 100%;
-  height: 100%;
+
 }
 body {
+
   -webkit-font-smoothing: antialiased;
   background-color: var(--white);
   color: var(--black);
@@ -47,6 +53,7 @@ body {
 #root {
   max-width: 1920px;
   margin: 0 auto;
+  overflow-x: hidden;
 
   @media (max-width: 768px) {
     max-width: 768px;

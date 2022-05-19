@@ -139,6 +139,7 @@ export const Local = styled.h4`
   @media (max-width: 768px) {
     font-size: 32px;
     line-height: 42px;
+    height: 80px;
   }
 `
 

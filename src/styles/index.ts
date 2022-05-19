@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
 
 html {
   scroll-behavior: smooth;
-
+  overflow-x: hidden;
   @media (min-width: 1080px) {
     font-size: 93.75%;
   }
@@ -35,7 +35,7 @@ body {
   color: var(--black);
   margin: 0;
   font-family: 'Saira', sans-serif;
-  overflow-x: hidden;
+
   h1 {
     font-size: 16px;
   }

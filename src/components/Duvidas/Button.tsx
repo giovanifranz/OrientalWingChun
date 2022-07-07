@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { PropsWithChildren } from 'react'
 import { VscTriangleRight } from 'react-icons/vsc'
 import { ThemeProvider } from 'styled-components'
 
@@ -7,12 +7,11 @@ import { useCard } from '@/hooks'
 import { duvidas } from './models'
 import { Button as StyledButton } from './styles'
 
-interface Props {
+type Props = {
   index: number
-  children: ReactNode
 }
 
-function Button({ index, children }: Props) {
+function Button({ index, children }: PropsWithChildren<Props>) {
   const { setCard, card } = useCard()
 
   const theme = {

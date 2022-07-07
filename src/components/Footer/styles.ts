@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.footer`
   width: 100vw;
+  max-width: 1920px;
   background-color: var(--white);
   padding: 30px 0;
 `

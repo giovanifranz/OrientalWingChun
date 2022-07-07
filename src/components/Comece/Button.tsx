@@ -4,7 +4,7 @@ import { TypeCity, useSelect } from '@/hooks/useSelect'
 
 import { Button as StyledButton } from './styles'
 
-interface Props {
+type Props = {
   title: string
 }
 

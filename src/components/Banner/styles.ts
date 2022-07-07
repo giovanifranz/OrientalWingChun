@@ -5,6 +5,7 @@ import lanternas from '@/assets/lanternas.png'
 export const Container = styled.section`
   background-image: url(${lanternas});
   background-size: cover;
+  max-width: 1920px;
   width: 100vw;
   height: 990px;
   padding-top: 380px;

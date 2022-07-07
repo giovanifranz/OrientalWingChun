@@ -1,5 +1,5 @@
-import { Dispatch, ReactNode, SetStateAction, useMemo } from 'react'
-import { createContext, useContext, useState } from 'react'
+import type { Dispatch, ReactNode, SetStateAction } from 'react'
+import { createContext, useContext, useMemo, useState } from 'react'
 
 import { IDuvida } from '@/components/Duvidas/models'
 

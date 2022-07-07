@@ -40,8 +40,8 @@ export const Box = styled.div`
   color: var(--white);
 
   @media (max-width: 768px) {
-    width: 100%;
-    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
   }
 `;
 export const Title = styled.h2`

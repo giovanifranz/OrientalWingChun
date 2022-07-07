@@ -1,13 +1,13 @@
-import { lazy } from 'react'
+import { lazy } from 'react';
 
-import { Banner, Comece, Duvidas, Escola, Footer, Numeros, Porque } from '@/components'
-import { CardProvider, SelectProvider, useWindowsSize } from '@/hooks'
+import { Banner, Comece, Duvidas, Escola, Footer, Numeros, Porque } from '@/components';
+import { CardProvider, SelectProvider, useWindowsSize } from '@/hooks';
 
-const Header = lazy(() => import('@/components/Header/Header'))
-const HeaderSM = lazy(() => import('@/components/Header/HeaderSM'))
+const Header = lazy(() => import('@/components/Header/Header'));
+const HeaderSM = lazy(() => import('@/components/Header/HeaderSM'));
 
 function App() {
-  const { isDesktop } = useWindowsSize()
+  const { isDesktop } = useWindowsSize();
 
   return (
     <CardProvider>
@@ -22,7 +22,7 @@ function App() {
       </SelectProvider>
       <Footer />
     </CardProvider>
-  )
+  );
 }
 
-export default App
+export default App;

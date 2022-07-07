@@ -1,7 +1,9 @@
-import { EnderecoProps } from './models'
-import { Local, TextLocal } from './styles'
+import { memo } from 'react';
 
-function Endereco({ local, rua, endereco }: EnderecoProps) {
+import { EnderecoProps } from './models';
+import { Local, TextLocal } from './styles';
+
+function EnderecoComponent({ local, rua, endereco }: EnderecoProps) {
   return (
     <div>
       <Local>{local}</Local>
@@ -11,7 +13,9 @@ function Endereco({ local, rua, endereco }: EnderecoProps) {
         {endereco}
       </TextLocal>
     </div>
-  )
+  );
 }
-
-export { Endereco }
+const Endereco = memo(EnderecoComponent, (prevProps, nextProps) =>
+  Object.is(prevProps, nextProps),
+);
+export { Endereco };

@@ -1,10 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100vw;
   max-width: 1920px;
   z-index: 99999;
-`
+`;
 
 export const Content = styled.div`
   width: 80%;
@@ -15,7 +15,7 @@ export const Content = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
-`
+`;
 
 export const Numero = styled.p`
   font-size: 80px;
@@ -26,7 +26,7 @@ export const Numero = styled.p`
     font-size: 36px;
     line-height: 56px;
   }
-`
+`;
 
 export const Text = styled.p`
   font-size: 30px;
@@ -37,7 +37,7 @@ export const Text = styled.p`
     font-size: 18px;
     line-height: 30px;
   }
-`
+`;
 
 export const Box = styled.div`
   display: flex;
@@ -53,4 +53,4 @@ export const Box = styled.div`
     width: 100vw;
     min-height: auto;
   }
-`
+`;

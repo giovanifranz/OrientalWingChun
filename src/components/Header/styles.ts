@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.header`
   background-color: var(--white);
@@ -8,7 +8,7 @@ export const Container = styled.header`
   left: 0;
   right: 0;
   top: 0;
-`
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ export const Content = styled.div`
   @media (max-width: 768px) {
     width: 360px;
   }
-`
+`;
 
 export const Title = styled.h1`
   font-family: 'Zector';
@@ -42,7 +42,7 @@ export const Title = styled.h1`
     font-size: 30px;
     line-height: 30px;
   }
-`
+`;
 
 export const Image = styled.img`
   width: 425px;
@@ -55,12 +55,12 @@ export const Image = styled.img`
     height: 280px;
     margin-right: 8px;
   }
-`
+`;
 
 export const Collumn = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
 
 export const HStack = styled.div`
   width: 100px;
@@ -68,7 +68,7 @@ export const HStack = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
 // para ter redes sociais clicaveis no header
 export const Anchor = styled.a`
@@ -79,4 +79,4 @@ export const Anchor = styled.a`
     cursor: pointer;
     opacity: 0.6;
   }
-`
+`;

@@ -1,19 +1,18 @@
-import { RiFacebookBoxFill, RiInstagramFill, RiWhatsappFill } from 'react-icons/ri'
+import { RiFacebookBoxFill, RiInstagramFill, RiWhatsappFill } from 'react-icons/ri';
 
-import emblema from '@/assets/emblema.png'
-import highlanderTech from '@/assets/highlandertech-logo.png'
-import { useWindowsSize } from '@/hooks'
+import { useWindowsSize } from '@/hooks';
 
-import { Anchor, Container, Content, Emblema, HighlanderTechLogo, Logo, SocialMedia } from './styles'
+import { Highlandertech } from './Highlandertech';
+import { Logo } from './Logo';
+import { Anchor, Container, Content, Emblema, SocialMedia } from './styles';
 
 function Footer() {
-  const { isDesktop } = useWindowsSize()
+  const { isDesktop } = useWindowsSize();
   return (
     <Container>
       <Content>
         <Emblema href="/">
-          <Logo src={emblema} alt="Emblema da Escola Oriental Wing Chun" loading="lazy" />
-          <h1>Oriental Wing Chun</h1>
+          <Logo />
         </Emblema>
         {isDesktop && (
           <>
@@ -22,15 +21,19 @@ function Footer() {
               <RiFacebookBoxFill size={60} />
               <RiWhatsappFill size={60} />
             </SocialMedia>
-            <Anchor href="https://www.highlandertech.com.br/" target="_blank" rel="noreferrer">
+            <Anchor
+              href="https://www.highlandertech.com.br/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>Desenvolvido por</p>
-              <HighlanderTechLogo src={highlanderTech} alt="Highlander Tech" loading="lazy" />
+              <Highlandertech />
             </Anchor>
           </>
         )}
       </Content>
     </Container>
-  )
+  );
 }
 
-export { Footer }
+export { Footer };

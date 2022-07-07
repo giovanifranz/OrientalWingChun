@@ -1,8 +1,8 @@
-import { RiFacebookBoxFill, RiInstagramFill, RiWhatsappFill } from 'react-icons/ri'
+import { RiFacebookBoxFill, RiInstagramFill, RiWhatsappFill } from 'react-icons/ri';
 
-import LogoOWC from '@/assets/logo-owc.png'
+import LogoOWC from '@/assets/logo-owc.png';
 
-import { Collumn, Container, Content, HStack, Image, Title } from './styles'
+import { Collumn, Container, Content, HStack, Image, Title } from './styles';
 
 function Header() {
   return (
@@ -20,7 +20,7 @@ function Header() {
         </Collumn>
       </Content>
     </Container>
-  )
+  );
 }
 
-export default Header
+export default Header;

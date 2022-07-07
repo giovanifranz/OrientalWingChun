@@ -1,11 +1,11 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.footer`
   width: 100vw;
   max-width: 1920px;
   background-color: var(--white);
   padding: 30px 0;
-`
+`;
 export const Content = styled.div`
   width: 80%;
   margin: 0 auto;
@@ -17,12 +17,12 @@ export const Content = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-`
+`;
 
 export const Logo = styled.img`
   width: 155px;
   height: 155px;
-`
+`;
 
 export const Emblema = styled.a`
   text-decoration: none;
@@ -51,19 +51,14 @@ export const Emblema = styled.a`
       margin-left: 10px;
     }
   }
-`
-
-export const HighlanderTechLogo = styled.img`
-  width: 270px;
-  height: 50px;
-`
+`;
 
 export const SocialMedia = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 230px;
-`
+`;
 
 export const Anchor = styled.a`
   text-decoration: none;
@@ -76,4 +71,4 @@ export const Anchor = styled.a`
   &:hover {
     cursor: pointer;
   }
-`
+`;

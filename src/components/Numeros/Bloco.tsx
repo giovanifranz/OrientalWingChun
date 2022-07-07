@@ -1,19 +1,20 @@
-import { ThemeProvider } from 'styled-components'
+import { memo } from 'react';
+import { ThemeProvider } from 'styled-components';
 
-import { Box, Numero, Text } from './styles'
+import { Box, Numero, Text } from './styles';
 
 interface Props {
-  valor: string
-  text: string
-  opacity?: boolean
-  border?: boolean
+  valor: string;
+  text: string;
+  opacity?: boolean;
+  border?: boolean;
 }
 
-function Bloco({ valor, text, opacity = false, border = false }: Props) {
+function BlocoComponent({ valor, text, opacity = false, border = false }: Props) {
   const theme = {
     opacity,
     border,
-  }
+  };
   return (
     <ThemeProvider theme={theme}>
       <Box>
@@ -21,7 +22,11 @@ function Bloco({ valor, text, opacity = false, border = false }: Props) {
         <Text>{text}</Text>
       </Box>
     </ThemeProvider>
-  )
+  );
 }
 
-export { Bloco }
+const Bloco = memo(BlocoComponent, (prevProps, nextProps) =>
+  Object.is(prevProps, nextProps),
+);
+
+export { Bloco };

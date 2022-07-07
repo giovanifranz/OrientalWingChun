@@ -1,13 +1,13 @@
 interface InstrutorProps {
-  name: string
-  href: string
-  telefone: string
+  name: string;
+  href: string;
+  telefone: string;
 }
 
 interface EnderecoProps {
-  local: string
-  rua: string
-  endereco: string
+  local: string;
+  rua: string;
+  endereco: string;
 }
 
 const model = {
@@ -47,7 +47,7 @@ const model = {
       endereco: 'Santo Ângelo, Canoas/RS',
     } as EnderecoProps,
   },
-}
+};
 
-export { model }
-export type { EnderecoProps, InstrutorProps }
+export { model };
+export type { EnderecoProps, InstrutorProps };

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import paisagem from '@/assets/paisagem.png'
+import paisagem from '@/assets/paisagem.png';
 
 export const Container = styled.section`
   width: 100vw;
@@ -10,7 +10,7 @@ export const Container = styled.section`
   margin-top: -87.5px;
   padding-top: 135px;
   padding-bottom: 50px;
-`
+`;
 
 export const Content = styled.article`
   background-color: rgba(255, 255, 255, 0.2);
@@ -18,7 +18,7 @@ export const Content = styled.article`
   padding-top: 100px;
   padding-bottom: 125px;
   position: relative;
-`
+`;
 
 export const Flex = styled.div`
   display: flex;
@@ -32,16 +32,16 @@ export const Flex = styled.div`
     width: 100%;
     display: block;
   }
-`
+`;
 
 export const InstrutorBox = styled.div`
   margin: 15px;
-`
+`;
 
 export const Box = styled.div`
   width: 80%;
   margin: 0 auto;
-`
+`;
 
 export const Title = styled.h2`
   font-size: 54px;
@@ -58,7 +58,7 @@ export const Title = styled.h2`
   @media (max-width: 768px) {
     font-size: 30px;
   }
-`
+`;
 
 export const Button = styled.button`
   background-color: transparent;
@@ -84,7 +84,7 @@ export const Button = styled.button`
     font-size: 20px;
     line-height: 30px;
   }
-`
+`;
 
 export const TextProfile = styled.p`
   font-size: 30px;
@@ -95,7 +95,7 @@ export const TextProfile = styled.p`
     font-size: 20px;
     line-height: 30px;
   }
-`
+`;
 
 export const Contato = styled.a`
   display: flex;
@@ -128,7 +128,7 @@ export const Contato = styled.a`
     line-height: 30px;
     width: 215px;
   }
-`
+`;
 
 export const Local = styled.h4`
   font-size: 50px;
@@ -141,7 +141,7 @@ export const Local = styled.h4`
     line-height: 42px;
     height: 80px;
   }
-`
+`;
 
 export const TextLocal = styled.p`
   font-size: 30px;
@@ -151,7 +151,7 @@ export const TextLocal = styled.p`
   @media (max-width: 768px) {
     font-size: 20px;
   }
-`
+`;
 
 export const TextJornada = styled.p`
   font-size: 20px;
@@ -162,4 +162,4 @@ export const TextJornada = styled.p`
   position: absolute;
   bottom: 20px;
   right: 10%;
-`
+`;

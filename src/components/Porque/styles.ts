@@ -1,10 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import grafite from '@/assets/grafite.png'
+import grafite from '@/assets/grafite.png';
 
 export const Container = styled.section`
   width: 100vw;
-`
+`;
 
 export const Content = styled.article`
   width: 100%;
@@ -16,17 +16,12 @@ export const Content = styled.article`
   @media (max-width: 1200px) {
     display: block;
   }
-`
+`;
 
 export const ImgTreino = styled.img`
   width: 480px;
   height: 300px;
-`
-
-export const ImgBrasão = styled.img`
-  width: 120px;
-  height: 135px;
-`
+`;
 
 export const Flex = styled.div`
   width: 100%;
@@ -37,7 +32,7 @@ export const Flex = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   height: 260px;
-`
+`;
 
 export const Box = styled.div`
   width: 634px;
@@ -47,7 +42,7 @@ export const Box = styled.div`
     width: 100%;
     padding: 10px;
   }
-`
+`;
 export const Title = styled.h2`
   font-size: 36px;
   font-weight: bold;
@@ -59,7 +54,7 @@ export const Title = styled.h2`
     font-size: 24px;
     line-height: 30px;
   }
-`
+`;
 
 export const Text = styled.p`
   font-size: 21px;
@@ -69,7 +64,7 @@ export const Text = styled.p`
     font-size: 16px;
     line-height: 24px;
   }
-`
+`;
 export const List = styled.ul`
   font-size: 21px;
   line-height: 30px;
@@ -80,4 +75,4 @@ export const List = styled.ul`
     line-height: 24px;
     margin-left: 20px;
   }
-`
+`;

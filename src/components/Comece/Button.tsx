@@ -1,23 +1,28 @@
-import { VscTriangleRight } from 'react-icons/vsc'
+import { memo } from 'react';
+import { VscTriangleRight } from 'react-icons/vsc';
 
-import { TypeCity, useSelect } from '@/hooks/useSelect'
+import { TypeCity, useSelect } from '@/hooks/useSelect';
 
-import { Button as StyledButton } from './styles'
+import { Button as StyledButton } from './styles';
 
 type Props = {
-  title: string
-}
+  title: string;
+};
 
-function Button({ title }: Props) {
-  const text = title.toLowerCase()
-  const { setSelect } = useSelect()
+function ButtonComponent({ title }: Props) {
+  const text = title.toLowerCase();
+  const { setSelect } = useSelect();
 
   return (
     <StyledButton onClick={() => setSelect(text as TypeCity)}>
       <VscTriangleRight size={20} /> {title}
     </StyledButton>
-  )
+  );
 }
 
-export { Button }
-export type { Props as ButtonProps }
+const Button = memo(ButtonComponent, (prevProps, nextProps) =>
+  Object.is(prevProps, nextProps),
+);
+
+export { Button };
+export type { Props as ButtonProps };

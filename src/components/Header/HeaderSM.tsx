@@ -1,6 +1,6 @@
-import LogoOWC from '@/assets/logo-owc.png'
+import LogoOWC from '@/assets/logo-owc.png';
 
-import { Container, Content, Image, Title } from './styles'
+import { Container, Content, Image, Title } from './styles';
 
 function HeaderSM() {
   return (
@@ -10,7 +10,7 @@ function HeaderSM() {
         <Title>Oriental Wing Chun</Title>
       </Content>
     </Container>
-  )
+  );
 }
 
-export default HeaderSM
+export default HeaderSM;

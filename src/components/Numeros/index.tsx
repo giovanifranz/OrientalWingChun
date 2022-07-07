@@ -1,5 +1,5 @@
-import { Bloco } from './Bloco'
-import { Container, Content } from './styles'
+import { Bloco } from './Bloco';
+import { Container, Content } from './styles';
 
 function Numeros() {
   return (
@@ -10,7 +10,7 @@ function Numeros() {
         <Bloco valor="R$80" text="custo fixo mental" opacity />
       </Content>
     </Container>
-  )
+  );
 }
 
-export { Numeros }
+export { Numeros };

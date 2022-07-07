@@ -1,14 +1,14 @@
-import { useSelect, useWindowsSize } from '@/hooks'
+import { useSelect, useWindowsSize } from '@/hooks';
 
-import { Button } from './Button'
-import { Endereco } from './Endereco'
-import { Instrutor } from './Instrutor'
-import { model } from './models'
-import { Box, Container, Content, Flex, TextJornada, Title } from './styles'
+import { Button } from './Button';
+import { Endereco } from './Endereco';
+import { Instrutor } from './Instrutor';
+import { model } from './models';
+import { Box, Container, Content, Flex, TextJornada, Title } from './styles';
 
 function Comece() {
-  const { select } = useSelect()
-  const { isDesktop } = useWindowsSize()
+  const { select } = useSelect();
+  const { isDesktop } = useWindowsSize();
   return (
     <Container>
       <Content>
@@ -34,7 +34,7 @@ function Comece() {
         </Box>
       </Content>
     </Container>
-  )
+  );
 }
 
-export { Comece }
+export { Comece };

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import lanternas from '@/assets/lanternas.png'
+import lanternas from '@/assets/lanternas.png';
 
 export const Container = styled.section`
   background-image: url(${lanternas});
@@ -13,7 +13,7 @@ export const Container = styled.section`
   @media (max-width: 1200px) {
     padding-top: 65px;
   }
-`
+`;
 
 export const Content = styled.article`
   width: 80%;
@@ -22,7 +22,7 @@ export const Content = styled.article`
   background-color: rgba(0, 0, 0, 0.6);
   border: 3px solid var(--white);
   text-align: center;
-`
+`;
 
 export const Title = styled.h2`
   font-weight: bold;
@@ -35,7 +35,7 @@ export const Title = styled.h2`
     font-size: 36px;
     line-height: 52px;
   }
-`
+`;
 
 export const Subtitle = styled.h3`
   font-weight: normal;
@@ -46,7 +46,7 @@ export const Subtitle = styled.h3`
     font-size: 24px;
     line-height: 40px;
   }
-`
+`;
 
 export const Text = styled.p`
   text-align: left;
@@ -59,4 +59,4 @@ export const Text = styled.p`
     font-size: 20px;
     line-height: 30px;
   }
-`
+`;

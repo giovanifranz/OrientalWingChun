@@ -1,10 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import assinatura from '@/assets/assinatura.png'
+import assinatura from '@/assets/assinatura.png';
 
 export const Container = styled.section`
   width: 100vw;
-`
+`;
 
 export const Content = styled.article`
   display: flex;
@@ -21,7 +21,7 @@ export const Content = styled.article`
   @media (max-width: 768px) {
     display: block;
   }
-`
+`;
 
 export const Box = styled.div`
   width: 500px;
@@ -35,7 +35,7 @@ export const Box = styled.div`
     width: 280px;
     margin-top: 0;
   }
-`
+`;
 
 export const Title = styled.h2`
   font-weight: bold;
@@ -47,7 +47,7 @@ export const Title = styled.h2`
     font-size: 40px;
     line-height: 60px;
   }
-`
+`;
 
 export const Text = styled.p`
   font-size: 30px;
@@ -62,7 +62,7 @@ export const Text = styled.p`
     font-size: 20px;
     line-height: 30px;
   }
-`
+`;
 
 export const Assinatura = styled.p`
   margin-top: 94px;
@@ -80,7 +80,7 @@ export const Assinatura = styled.p`
     font-size: 45px;
     line-height: 60px;
   }
-`
+`;
 
 export const Image = styled.img`
   width: 565px;
@@ -95,4 +95,4 @@ export const Image = styled.img`
     width: 300px;
     height: 430px;
   }
-`
+`;

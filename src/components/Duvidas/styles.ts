@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100vw;
-`
+`;
 
 export const Content = styled.article`
   width: 80%;
@@ -13,7 +13,7 @@ export const Content = styled.article`
   @media (max-width: 1200px) {
     display: block;
   }
-`
+`;
 
 export const Title = styled.h2`
   font-weight: bold;
@@ -29,7 +29,7 @@ export const Title = styled.h2`
   @media (max-width: 768px) {
     font-size: 30px;
   }
-`
+`;
 
 export const Text = styled.p`
   margin-top: 50px;
@@ -40,7 +40,7 @@ export const Text = styled.p`
     font-size: 20px;
     line-height: 30px;
   }
-`
+`;
 
 export const Button = styled.button`
   margin-bottom: 15px;
@@ -63,7 +63,7 @@ export const Button = styled.button`
   @media (max-width: 768px) {
     font-size: 20px;
   }
-`
+`;
 
 export const Box = styled.div`
   padding: 30px;
@@ -74,12 +74,12 @@ export const Box = styled.div`
   @media (max-width: 1200px) {
     max-width: 100%;
   }
-`
+`;
 
 export const CardTitle = styled.h4`
   font-size: 30px;
   text-transform: uppercase;
-`
+`;
 
 export const Contato = styled.a`
   display: flex;
@@ -111,4 +111,4 @@ export const Contato = styled.a`
     width: 240px;
     width: 215px;
   }
-`
+`;

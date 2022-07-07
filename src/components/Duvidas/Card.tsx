@@ -1,11 +1,11 @@
-import { Fragment } from 'react'
+import { Fragment } from 'react';
 
-import { useCard } from '@/hooks'
+import { useCard } from '@/hooks';
 
-import { Box, CardTitle } from './styles'
+import { Box, CardTitle } from './styles';
 
 function Card() {
-  const { card } = useCard()
+  const { card } = useCard();
 
   return (
     <Fragment>
@@ -16,7 +16,7 @@ function Card() {
         </Box>
       )}
     </Fragment>
-  )
+  );
 }
 
-export { Card }
+export { Card };

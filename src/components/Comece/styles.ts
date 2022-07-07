@@ -4,6 +4,7 @@ import paisagem from '@/assets/paisagem.png';
 
 export const Container = styled.section`
   width: 100vw;
+  max-width: 1920px;
   background-image: url(${paisagem});
   background-size: cover;
   background-repeat: no-repeat;

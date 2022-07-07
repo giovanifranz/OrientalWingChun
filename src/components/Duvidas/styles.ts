@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100vw;
+  max-width: 1920px;
 `;
 
 export const Content = styled.article`

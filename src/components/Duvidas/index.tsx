@@ -1,8 +1,9 @@
 import { RiWhatsappFill } from 'react-icons/ri';
 
+import { duvidas } from '../../../data/duvidasModels';
+
 import { Button } from './Button';
 import { Card } from './Card';
-import { duvidas } from './models';
 import { Container, Contato, Content, Text, Title } from './styles';
 
 function Duvidas() {

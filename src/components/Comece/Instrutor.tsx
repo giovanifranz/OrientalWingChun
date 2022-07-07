@@ -1,7 +1,8 @@
 import { memo } from 'react';
 import { RiWhatsappFill } from 'react-icons/ri';
 
-import type { InstrutorProps } from './models';
+import type { InstrutorProps } from '../../../data/comeceModels';
+
 import { Contato, InstrutorBox, TextProfile, Title } from './styles';
 
 function InstrutorComponent({ name, telefone, href }: InstrutorProps) {

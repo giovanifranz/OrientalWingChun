@@ -1,6 +1,7 @@
 import { memo } from 'react';
 
-import { EnderecoProps } from './models';
+import { EnderecoProps } from '../../../data/comeceModels';
+
 import { Local, TextLocal } from './styles';
 
 function EnderecoComponent({ local, rua, endereco }: EnderecoProps) {

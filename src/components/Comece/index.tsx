@@ -1,9 +1,10 @@
 import { useSelect, useWindowsSize } from '@/hooks';
 
+import { model } from '../../../data/comeceModels';
+
 import { Button } from './Button';
 import { Endereco } from './Endereco';
 import { Instrutor } from './Instrutor';
-import { model } from './models';
 import { Box, Container, Content, Flex, TextJornada, Title } from './styles';
 
 function Comece() {

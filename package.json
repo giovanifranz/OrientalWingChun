@@ -11,8 +11,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint src --max-warnings=0 --fix",
-    "format": "prettier --write src",
+    "lint": "eslint \"{src,data}/**/*.{ts,tsx}\" --max-warnings=0 --fix",
+    "format": "prettier --write \"{src,data}/**/*.{ts,tsx}\"",
     "clean": "rimraf dist",
     "prepare": "husky install"
   },

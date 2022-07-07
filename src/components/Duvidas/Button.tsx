@@ -4,7 +4,8 @@ import { ThemeProvider } from 'styled-components';
 
 import { useCard } from '@/hooks';
 
-import { duvidas } from './models';
+import { duvidas } from '../../../data/duvidasModels';
+
 import { Button as StyledButton } from './styles';
 
 type Props = {

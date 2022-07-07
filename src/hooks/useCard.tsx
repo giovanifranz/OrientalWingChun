@@ -1,7 +1,7 @@
 import type { Dispatch, ReactNode, SetStateAction } from 'react';
 import { createContext, useContext, useMemo, useState } from 'react';
 
-import { IDuvida } from '@/components/Duvidas/models';
+import { IDuvida } from '../../data/duvidasModels';
 
 interface Props {
   card: IDuvida;

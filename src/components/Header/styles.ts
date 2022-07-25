@@ -18,10 +18,16 @@ export const Content = styled.div`
 
   @media (max-width: 1200px) {
     width: 768px;
+    padding: 0 10px;
   }
 
   @media (max-width: 768px) {
     width: 360px;
+  }
+
+  @media (max-width: 420px) {
+    width: 100%;
+    padding: 0 10px 0 0;
   }
 `;
 

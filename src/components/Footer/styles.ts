@@ -19,11 +19,6 @@ export const Content = styled.div`
   }
 `;
 
-export const Logo = styled.img`
-  width: 155px;
-  height: 155px;
-`;
-
 export const Emblema = styled.a`
   text-decoration: none;
   display: flex;

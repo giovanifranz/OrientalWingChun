@@ -14,6 +14,7 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    margin-left: -10px;
   }
 `;
 
@@ -50,7 +51,7 @@ export const Box = styled.div`
   background-color: var(--gray-light);
 
   @media (max-width: 768px) {
-    width: 100vw;
+    width: 100%;
     min-height: auto;
   }
 `;

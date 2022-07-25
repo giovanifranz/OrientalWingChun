@@ -43,14 +43,18 @@ export const Text = styled.p`
   }
 `;
 
-export const Button = styled.button`
+type ButtonProps = {
+  opacity?: number;
+};
+
+export const Button = styled.button<ButtonProps>`
   margin-bottom: 15px;
   background-color: transparent;
   border: none;
   font-size: 30px;
   display: flex;
   align-items: center;
-  opacity: ${({ theme }) => theme.opacity};
+  ${({ opacity }) => opacity && `opacity: ${opacity};`}
 
   svg {
     color: var(--purple);

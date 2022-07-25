@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 import { useCard } from '@/hooks';
 
 import { Box, CardTitle } from './styles';
@@ -7,15 +5,13 @@ import { Box, CardTitle } from './styles';
 function Card() {
   const { card } = useCard();
 
+  if (!card.title) return null;
+
   return (
-    <Fragment>
-      {card.title && (
-        <Box>
-          <CardTitle>{card.title}</CardTitle>
-          {card.text}
-        </Box>
-      )}
-    </Fragment>
+    <Box>
+      <CardTitle>{card.title}</CardTitle>
+      {card.text}
+    </Box>
   );
 }
 

@@ -1,4 +1,4 @@
-import { Text } from '../src/components/Duvidas/styles';
+import { Text } from '../components/Duvidas/styles';
 
 interface IDuvida {
   question: string;

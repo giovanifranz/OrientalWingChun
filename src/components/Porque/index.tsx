@@ -3,8 +3,10 @@ import { lazy } from 'react';
 import Instrutor from '@/assets/instrutor.png';
 import { useWindowsSize } from '@/hooks/useWindowsSize';
 
-const Simbolo = lazy(() => import('./Simbolo'));
 import { Box, Container, Content, Flex, ImgTreino, List, Text, Title } from './styles';
+
+const Simbolo = lazy(() => import('./Simbolo'));
+
 function Porque() {
   const { width, isDesktop } = useWindowsSize();
   return (

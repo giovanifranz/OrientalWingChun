@@ -1,7 +1,7 @@
 import type { Dispatch, ReactNode, SetStateAction } from 'react';
 import { createContext, useContext, useMemo, useState } from 'react';
 
-import { IDuvida } from '../../data/duvidasModels';
+import { IDuvida } from '../data/duvidasModels';
 
 interface Props {
   card: IDuvida;
@@ -23,5 +23,5 @@ function CardProvider({ children }: useCardProviderProps) {
 
 const useCard = () => useContext(CardContext);
 
-export { CardProvider, CardContext, useCard };
+export { CardContext, CardProvider, useCard };
 export type { Props as CardContextProps };

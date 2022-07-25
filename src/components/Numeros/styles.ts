@@ -17,10 +17,14 @@ export const Content = styled.div`
   }
 `;
 
-export const Numero = styled.p`
+type NumeroProps = {
+  opacity?: boolean;
+};
+
+export const Numero = styled.p<NumeroProps>`
   font-size: 80px;
   line-height: 126px;
-  opacity: ${({ theme }) => (theme.opacity ? 0.8 : 1)};
+  ${({ opacity }) => (opacity ? 'opacity: 0.8;' : `opacity: 1;`)}
 
   @media (max-width: 768px) {
     font-size: 36px;
@@ -39,14 +43,22 @@ export const Text = styled.p`
   }
 `;
 
-export const Box = styled.div`
+type BoxProps = {
+  border?: boolean;
+};
+
+export const Box = styled.div<BoxProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 380px;
   min-height: 175px;
-  border-left: ${({ theme }) => theme.border && '1px solid rgba(0, 0, 0, 0.2)'};
-  border-right: ${({ theme }) => theme.border && '1px solid rgba(0, 0, 0, 0.2)'};
+  ${({ border }) =>
+    border &&
+    `
+      border-left: 1px solid rgba(0, 0, 0, 0.2);
+      border-right: '1px solid rgba(0, 0, 0, 0.2)';
+    `}
   background-color: var(--gray-light);
 
   @media (max-width: 768px) {

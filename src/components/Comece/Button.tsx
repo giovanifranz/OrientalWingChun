@@ -9,7 +9,7 @@ type Props = {
   title: string;
 };
 
-function ButtonComponent({ title }: Props) {
+const Button = memo(({ title }: Props) => {
   const text = title.toLowerCase();
   const { setSelect } = useSelect();
 
@@ -18,11 +18,7 @@ function ButtonComponent({ title }: Props) {
       <VscTriangleRight size={20} /> {title}
     </StyledButton>
   );
-}
-
-const Button = memo(ButtonComponent, (prevProps, nextProps) =>
-  Object.is(prevProps, nextProps),
-);
+});
 
 export { Button };
 export type { Props as ButtonProps };

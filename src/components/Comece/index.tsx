@@ -1,6 +1,6 @@
 import { useSelect, useWindowsSize } from '@/hooks';
 
-import { model } from '../../../data/comeceModels';
+import { model } from '../../data/comeceModels';
 
 import { Button } from './Button';
 import { Endereco } from './Endereco';

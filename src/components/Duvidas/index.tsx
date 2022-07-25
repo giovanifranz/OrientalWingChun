@@ -1,6 +1,6 @@
 import { RiWhatsappFill } from 'react-icons/ri';
 
-import { duvidas } from '../../../data/duvidasModels';
+import { duvidas } from '../../data/duvidasModels';
 
 import { Button } from './Button';
 import { Card } from './Card';
@@ -15,7 +15,7 @@ function Duvidas() {
             <mark>Dúv</mark>idas Comuns
           </Title>
           {duvidas.map((duvida, index) => (
-            <Button key={index} index={index}>
+            <Button key={duvida.title} index={index}>
               {duvida.question}
             </Button>
           ))}
@@ -23,6 +23,7 @@ function Duvidas() {
           <Contato
             href="https://api.whatsapp.com/send?phone=555199188952"
             target="_blank"
+            rel="noreferrer"
           >
             <RiWhatsappFill size={40} /> (51) 9918 -8952
           </Contato>

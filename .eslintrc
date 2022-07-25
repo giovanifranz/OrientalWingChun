@@ -15,7 +15,9 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "airbnb",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -42,10 +44,28 @@
         ]
       }
     ],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "off",
-    "react/prop-types": "off",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "no-use-before-define": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-undef": "off",
+    "import/no-extraneous-dependencies": [
+      "off",
+      { "devDependencies": ["**/*.stories.tsx", "**/*.test.tsx"] }
+    ],
+    "no-nested-ternary": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-var-requires": "off",
+    "react/jsx-filename-extension": "off",
     "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off"
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off"
   }
 }

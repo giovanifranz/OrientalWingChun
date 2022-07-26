@@ -14,8 +14,11 @@ type Props = {
 const Button = memo(({ index, children }: PropsWithChildren<Props>) => {
   const { setCard, card } = useCard();
 
+  const showCard = duvidas[index];
+  const isOpacity = card === showCard;
+
   return (
-    <StyledButton opacity={card.opacity} onClick={() => setCard(duvidas[index])}>
+    <StyledButton opacity={isOpacity} onClick={() => setCard(showCard)}>
       <VscTriangleRight size={14} /> {children}
     </StyledButton>
   );

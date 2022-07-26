@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import paisagem from '@/assets/paisagem.png';
 
@@ -61,14 +61,25 @@ export const Title = styled.h2`
   }
 `;
 
-export const Button = styled.button`
+type ButtonProps = {
+  opacity: boolean;
+};
+
+export const Button = styled.button<ButtonProps>`
   background-color: transparent;
   color: var(--white);
   border: none;
   font-size: 30px;
   display: flex;
   align-items: center;
-  opacity: ${({ theme }) => theme.opacity};
+  ${({ opacity }) =>
+    opacity
+      ? css`
+          opacity: 0.8;
+        `
+      : css`
+          opacity: 1;
+        `}
   margin-bottom: 15px;
 
   svg {

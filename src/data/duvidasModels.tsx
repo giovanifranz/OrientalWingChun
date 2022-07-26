@@ -4,7 +4,6 @@ interface IDuvida {
   question: string;
   title: string;
   text: JSX.Element;
-  opacity?: number;
 }
 
 const duvidas: IDuvida[] = [

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   width: 100vw;
@@ -44,7 +44,7 @@ export const Text = styled.p`
 `;
 
 type ButtonProps = {
-  opacity?: number;
+  opacity: boolean;
 };
 
 export const Button = styled.button<ButtonProps>`
@@ -54,7 +54,14 @@ export const Button = styled.button<ButtonProps>`
   font-size: 30px;
   display: flex;
   align-items: center;
-  ${({ opacity }) => opacity && `opacity: ${opacity};`}
+  ${({ opacity }) =>
+    opacity
+      ? css`
+          opacity: 0.6;
+        `
+      : css`
+          opacity: 1;
+        `}
 
   svg {
     color: var(--purple);

@@ -11,10 +11,12 @@ type Props = {
 
 const Button = memo(({ title }: Props) => {
   const text = title.toLowerCase();
-  const { setSelect } = useSelect();
+  const { select, setSelect } = useSelect();
+
+  const isOpacity = select === text;
 
   return (
-    <StyledButton onClick={() => setSelect(text as TypeCity)}>
+    <StyledButton opacity={isOpacity} onClick={() => setSelect(text as TypeCity)}>
       <VscTriangleRight size={20} /> {title}
     </StyledButton>
   );

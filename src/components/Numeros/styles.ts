@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   width: 100vw;
@@ -18,13 +18,20 @@ export const Content = styled.div`
 `;
 
 type NumeroProps = {
-  opacity?: boolean;
+  opacity: boolean;
 };
 
 export const Numero = styled.p<NumeroProps>`
   font-size: 80px;
   line-height: 126px;
-  ${({ opacity }) => (opacity ? 'opacity: 0.8;' : `opacity: 1;`)}
+  ${({ opacity }) =>
+    opacity
+      ? css`
+          opacity: 0.8;
+        `
+      : css`
+          opacity: 1;
+        `}
 
   @media (max-width: 768px) {
     font-size: 36px;

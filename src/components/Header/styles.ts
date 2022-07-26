@@ -76,7 +76,6 @@ export const HStack = styled.div`
   align-items: center;
 `;
 
-// para ter redes sociais clicaveis no header
 export const Anchor = styled.a`
   text-decoration: none;
   color: black;

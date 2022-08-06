@@ -1,3 +1,6 @@
 {
-  "extends": ["@highlandertech/eslint-config/eslint"]
+  "extends": ["@highlandertech/eslint-config/eslint"],
+  "rules": {
+    "import/no-unresolved": "off"
+  }
 }

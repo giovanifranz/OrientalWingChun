@@ -18,7 +18,9 @@ function SelectProvider({ children }: useSelectProviderProps) {
   const [select, setSelect] = useState<TypeCity>('gravataí');
 
   const value = useMemo(() => ({ select, setSelect }), [select, setSelect]);
-  return <SelectContext.Provider value={value}>{children}</SelectContext.Provider>;
+  return (
+    <SelectContext.Provider value={value}>{children}</SelectContext.Provider>
+  );
 }
 
 const useSelect = () => useContext(SelectContext);

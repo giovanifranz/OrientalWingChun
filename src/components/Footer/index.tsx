@@ -1,4 +1,8 @@
-import { RiFacebookBoxFill, RiInstagramFill, RiWhatsappFill } from 'react-icons/ri';
+import {
+  RiFacebookBoxFill,
+  RiInstagramFill,
+  RiWhatsappFill,
+} from 'react-icons/ri';
 
 import { useWindowsSize } from '@/hooks';
 

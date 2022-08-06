@@ -1,6 +1,14 @@
 import { lazy } from 'react';
 
-import { Banner, Comece, Duvidas, Escola, Footer, Numeros, Porque } from '@/components';
+import {
+  Banner,
+  Comece,
+  Duvidas,
+  Escola,
+  Footer,
+  Numeros,
+  Porque,
+} from '@/components';
 import { CardProvider, SelectProvider, useWindowsSize } from '@/hooks';
 
 const Header = lazy(() => import('@/components/Header/Header'));

@@ -45,7 +45,10 @@ export default function Simbolo() {
           height="1"
           patternContentUnits="objectBoundingBox"
         >
-          <use transform="matrix(.0009 0 0 .00083 -.039 0)" xlinkHref="#image0_311_958" />
+          <use
+            transform="matrix(.0009 0 0 .00083 -.039 0)"
+            xlinkHref="#image0_311_958"
+          />
         </pattern>
         <image
           id="image0_311_958"

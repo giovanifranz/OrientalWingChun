@@ -9,12 +9,14 @@ type Props = {
   border?: boolean;
 };
 
-const Bloco = memo(({ valor, text, opacity = false, border = false }: Props) => (
-  <Box border={border}>
-    <Numero opacity={opacity}>{valor}</Numero>
-    <Text>{text}</Text>
-  </Box>
-));
+const Bloco = memo(
+  ({ valor, text, opacity = false, border = false }: Props) => (
+    <Box border={border}>
+      <Numero opacity={opacity}>{valor}</Numero>
+      <Text>{text}</Text>
+    </Box>
+  ),
+);
 
 export { Bloco };
 export type { Props as BlocoProps };

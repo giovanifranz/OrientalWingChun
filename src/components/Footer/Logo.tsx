@@ -25,7 +25,10 @@ export function Logo() {
         />
       </mask>
       <g mask="url(#mask0_332_1121)">
-        <path fill="url(#pattern0)" d="M32.28 32.577h88.847v88.846H32.281V32.577z" />
+        <path
+          fill="url(#pattern0)"
+          d="M32.28 32.577h88.847v88.846H32.281V32.577z"
+        />
       </g>
       <path
         fill="#fff"

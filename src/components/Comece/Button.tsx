@@ -16,7 +16,10 @@ const Button = memo(({ title }: Props) => {
   const isOpacity = select === text;
 
   return (
-    <StyledButton opacity={isOpacity} onClick={() => setSelect(text as TypeCity)}>
+    <StyledButton
+      opacity={isOpacity}
+      onClick={() => setSelect(text as TypeCity)}
+    >
       <VscTriangleRight size={20} /> {title}
     </StyledButton>
   );
